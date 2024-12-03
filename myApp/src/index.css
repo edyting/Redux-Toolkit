@@ -5,9 +5,9 @@ Variables
 */
 
 :root {
-  --clr-primary: #645cff;
+  --clr-primary: #0a2e50;
   --clr-primary-dark: #282566;
-  --clr-primary-light: #a29dff;
+  --clr-primary-light: hsl(360,67%,44%);
   --clr-grey-1: #102a42;
   --clr-grey-5: #617d98;
   --clr-grey-10: #f1f5f8;
@@ -223,6 +223,9 @@ Cart Item
   grid-template-columns: auto 1fr auto;
   grid-column-gap: 1.5rem;
   margin: 1.5rem 0;
+  border: 2px solid #617d98;
+  padding: 15px;
+  border-radius: 7px;
 }
 .cart-item img {
   width: 5rem;
@@ -238,7 +241,7 @@ Cart Item
   color: var(--clr-grey-5);
 }
 .remove-btn {
-  color: var(--clr-primary);
+  color: var(--clr-primary-light);
   letter-spacing: var(--spacing);
   cursor: pointer;
   font-size: 0.85rem;
@@ -248,7 +251,9 @@ Cart Item
   transition: var(--transition);
 }
 .remove-btn:hover {
-  color: var(--clr-primary-light);
+  color: var(--clr-primary);
+  scale: 1.05;
+  font-weight: bold;
 }
 .amount-btn {
   width: 24px;

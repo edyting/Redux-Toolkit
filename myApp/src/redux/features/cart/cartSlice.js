@@ -8,7 +8,7 @@ const initialState = {
     isLoading:true,
 };
 // async operation in redux toolkit
-const url = 'https://www.course-api.com/react-useReducer-cart-projects';
+const url = 'https://www.course-api.com/react-useReducer-cart-project';
 
 //**** this is the basic method */
 // export const getCartItems = createAsyncThunk('cart/getCartItems',()=>{
